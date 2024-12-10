@@ -1,0 +1,43 @@
+.content {
+    width: 50%;
+    height: "50%";
+    margin: "auto";
+    padding: "20px";
+    border-radius: "10px";
+    text-align: "center";
+    display: flex;
+    align-content: space-between;
+}
+.overlay {
+    background-color: "rgba(0, 0, 0, 0.7)";
+}
+
+.imagen {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .imagen {
+        max-height: 300px;
+    }
+}
+
+.description {
+    margin: 20px;
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+}
+
+.inputs {
+    margin: 5px;
+}
+
+/* Asegúrate de que los botones no se desborden en móviles */
+.btn {
+    white-space: nowrap;
+    margin: 5px !important;
+}

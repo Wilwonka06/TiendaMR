@@ -1,0 +1,232 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuL{
+  width: 20px;
+}
+
+.imagen{
+  max-width: 200px;
+}
+.menuLq{
+  width: 22px;
+}
+
+.sesion{
+  gap: 10px;
+}
+
+.boton{
+  border-bottom: solid 0.2em #cccacab2; 
+}
+
+.boton {
+  border-bottom: solid 0.2em transparent;
+  transition: border-bottom 0.7s;
+}
+
+.boton.active {
+  border-bottom: solid 0.2em #000000b2;
+}
+
+.tarjetas{
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 24em;
+  margin-bottom: 5px;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+}
+
+.title{
+  padding: 5px;
+  margin-bottom: 5px;
+  font-family: "Parkinsans", sans-serif;
+}
+
+.price{
+  padding: 2px;
+  border-radius: 5px;
+  color: rgb(0, 112, 0) !important;
+}
+
+.image{
+  height: 50%;
+}
+
+.image img {
+  max-height: 150px;
+}
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+}
+
+.card .price {
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+
+
+.text {
+  max-width: 55px;
+}
+
+.image {  
+  width: 100%;
+  height: 70%;
+  display: grid;
+  place-items: center;
+}
+
+.category-item {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.category-item:hover {
+}
+
+.category-item.active {
+  background-color: #000;
+  color: white;
+}
+
+
+.cart-overlay {
+  position: fixed;
+  top: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 500;
+}
+
+.cart-container {
+  background: white;
+  width: 400px;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+}
+
+.cart-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.btnP{
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  border: solid 0;
+  padding: 5px;
+}
+
+@media (width <= 991px) {
+  .tarjetas{
+    padding-left: 20%;
+  }
+  .boton{
+    border-bottom: solid 0; 
+  }
+
+  .boton:hover{
+    transition: 0.7;
+    border-bottom: solid 0;
+    color: #000;
+    font-size: larger;
+  }
+
+  .sidebar{
+    display: none;
+  }
+}

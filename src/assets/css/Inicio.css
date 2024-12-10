@@ -1,0 +1,35 @@
+.contenedor1 {
+  min-height: 200px;
+  transition: all 0.3s ease;
+  background-image: url('https://media.istockphoto.com/id/918758094/es/foto/ropa-accesorios-calzado-de-mujer-sobre-fondo-de-madera-ropa-para-adolescentes-vista-superior.jpg?s=612x612&w=0&k=20&c=bV8C6QUre2jf9xZSBDwSoC7Te5stS7QykTevTsmuntE=');
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.contenedor1:nth-child(2){
+  background-image: url("https://media.istockphoto.com/id/849125092/es/foto/ropa-de-moda-hombres-los-pantalones-vaqueros-y-zapatos-sobre-fondo-claro.webp?a=1&b=1&s=612x612&w=0&k=20&c=dRFCiAdWw_7YhufR2S7oHMVJ8f_wgGVYezNyZOnze9I=");
+}
+
+.mujer {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.titulo {
+  margin-top: 170px;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  .contenedor1 {
+    min-height: 150px;
+    height: 10vh;
+    margin-right: 35px;
+  }
+
+  .titulo {
+    margin-top: 50px;
+  }
+}

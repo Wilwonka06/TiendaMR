@@ -1,0 +1,17 @@
+.producto {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+  }
+  
+  .redes {
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .producto {
+      font-size: 0.9rem;
+    }
+  }
+
